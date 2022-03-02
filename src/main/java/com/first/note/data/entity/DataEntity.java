@@ -1,5 +1,8 @@
 package com.first.note.data.entity;
 
+import cn.hutool.core.date.DateTime;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -13,7 +16,9 @@ public class DataEntity implements Serializable {
     private int id;
     @Column(name = "title")
     private String title;
+
     @Column(name = "date")
+    @JsonFormat(locale = "zh", timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     private Date date;
     @Column(name = "content", length = 200)
     private String content;

@@ -10,9 +10,9 @@ spring:
   ####数据源相关配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:33066/demo?useUnicode=true&characterEncoding=utf-8
     username: root
-    password:
+    password: QBL34YoK1Qn
     max-idle: 10
     max-wait: 10000
     min-idle: 5
